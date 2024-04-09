@@ -16,7 +16,8 @@ from app.main import is_isogram
     pytest.param("look", False, id="test should return False "
                                    "if inside 'word' two identical letters"),
     pytest.param("Mom", False, id="test should return False "
-                                  "if the first and last letters are the same"),
+                                  "if the first and last "
+                                  "letters are the same"),
 ])
 def test_is_isogram(word: str, expected_boolean_value: bool) -> None:
     assert (
